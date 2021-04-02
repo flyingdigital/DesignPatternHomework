@@ -1,38 +1,39 @@
-package com.flyingdigital.ds3;
-
 public class Test {
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Color red=new Red();
+        AbstractShape rectangular=new Rectangular();
+        AbstractShape circle=new Circle();
+        rectangular.setColor(red);
+        rectangular.draw();
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Color red=new Red();
-		AbstractShape rectangular=new Rectangular();
-		rectangular.setColor(red);
-		rectangular.draw();		
-		
-		Color blue = new Blue();
-		rectangular.setColor(blue);
-		rectangular.draw();
-		
-		Color yellow = new Yellow();
-		rectangular.setColor(yellow);
-		rectangular.draw();
-	
-		System.out.println("--×éÔ±Ìí¼ÓµÄ²¿·Ö--");		
-		Color green=new Green();	//×éÔ±Ìí¼ÓµÄÐÂÑÕÉ«
-		AbstractShape triangle=new Triangle(); //×éÔ±Ìí¼ÓµÄÈý½ÇÐÎ
-		System.out.println("×éÔ±Ìí¼ÓµÄÐÎ×´-Èý½ÇÐÎ");
-		triangle.setColor(red);	
-		triangle.draw();
-		triangle.setColor(blue);
-		triangle.draw();
-		triangle.setColor(yellow);
-		triangle.draw();
-		triangle.setColor(green);
-		triangle.draw();
-		System.out.println("×éÔ±Ìí¼ÓµÄÑÕÉ«-ÂÌÉ«");
-		rectangular.setColor(green);	//×éÔ±Ìí¼ÓµÄÂÌÉ«
-		rectangular.draw();
-		
-	}
+        Color blue = new Blue();
+        rectangular.setColor(blue);
+        rectangular.draw();
 
+        Color yellow = new Yellow();
+        rectangular.setColor(yellow);
+        rectangular.draw();
+
+        Color black = new Black();
+        circle.setColor(black);
+        circle.draw();
+
+        System.out.println("--ç»„å‘˜æ·»åŠ çš„éƒ¨åˆ†--");
+        Color green=new Green();	//ç»„å‘˜æ·»åŠ çš„æ–°é¢œè‰²
+        AbstractShape triangle=new Triangle(); //ç»„å‘˜æ·»åŠ çš„ä¸‰è§’å½¢
+        System.out.println("ç»„å‘˜æ·»åŠ çš„å½¢çŠ¶-ä¸‰è§’å½¢");
+        triangle.setColor(red);
+        triangle.draw();
+        triangle.setColor(blue);
+        triangle.draw();
+        triangle.setColor(yellow);
+        triangle.draw();
+        triangle.setColor(green);
+        triangle.draw();
+        System.out.println("ç»„å‘˜æ·»åŠ çš„é¢œè‰²-ç»¿è‰²");
+        rectangular.setColor(green);	//ç»„å‘˜æ·»åŠ çš„ç»¿è‰²
+        rectangular.draw();
+
+    }
 }
