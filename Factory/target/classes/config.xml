@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans>
+    <bean id="haier" class="com.flyingdigital.ConcreteTV.Haier"></bean>
+    <bean id="hisense" class="com.flyingdigital.ConcreteTV.Hisense"></bean>
+</beans>
